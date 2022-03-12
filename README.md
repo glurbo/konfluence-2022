@@ -1,4 +1,4 @@
-# vue-starter-project
+# konfluence-web
 
 ## Project setup
 ```

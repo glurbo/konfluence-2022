@@ -4,12 +4,45 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="canonical" href="https://konfluence.eu/" />
+	<!-- <meta name="description" content="Konfluence is a student organized front end conference taking place on the TODO"> -->
+	<meta name="robots" content="index,nofollow">
+	<meta name="keywords"
+			content="programming,conference,konverents,frontend,front-end,digital,mindbending,stylish,ux,ui,front,vue,react,angular,native,javascript,web,Konfluence, konfluence, js, taltech, ttü, ttu, tut, mektory, eesti, estonia, student, best, the best, ">
+	<meta name="copyright" content="ITÜK">
+	<meta property="og:title" content="Konfluence 2022">
+	<meta property="og:url" content="https://konfluence.eu/">
+	<meta property="og:type" content="website">
+	<meta property="og:description" content="First of its kind student-organized front-end conference">
+	<!-- <meta property="og:image" content="https://i.imgur.com/9L972Lbl.jpg"> -->
+	<meta property="twitter:site" content="Konfluence 2022">
+	<meta property="twitter:title" content="Konfluence 2022">
+	<meta property="twitter:url" content="https://konfluence.eu/">
+	<meta property="twitter:type" content="website">
+	<!-- <meta property="twitter:description" content="First of its kind student-organized front-end conference"> -->
+	<meta property="twitter:card" content="summary">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <title>Konfluence 2022</title>
+	<script>
+		import { initializeApp } from "firebase/app";
+		import { getAnalytics } from "firebase/analytics";
+
+		const firebaseConfig = {
+		apiKey: "AIzaSyA1IrSBlVkysaObMVhRIJMoWQnlvX8vJPU",
+		authDomain: "konfluence-2022.firebaseapp.com",
+		projectId: "konfluence-2022",
+		storageBucket: "konfluence-2022.appspot.com",
+		messagingSenderId: "904008653577",
+		appId: "1:904008653577:web:dd4ee59aa4a0cc205ad1d8",
+		measurementId: "G-10K7QJZH4E"
+		};
+		const app = initializeApp(firebaseConfig);
+		const analytics = getAnalytics(app);
+	</script>
   </head>
   <body>
     <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+      <strong>We're sorry but our website doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
