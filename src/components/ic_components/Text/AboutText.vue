@@ -1,12 +1,10 @@
 <template>
   <div class="is-size-5-desktop is-size-6-mobile">
     <p class="is-size-5-desktop is-size-6-mobile">
-      Konfluence brings together the best developers, engineers and designers who specialize in front end development
-      with emphasis on quality user interface design and experience, web development and newest front-end technologies.
-      The conference is entirely organized by the students of TalTech school of IT and takes place on <strong>
-        the 26th of
-        April.
-      </strong>
+      Konfluence is a conference that is entirely organized by the students of TalTech student council of the school of IT and brings together many experts from well-known 
+      Estonian start-ups and established IT-companies.
+      Acquire or improve your knowledge from the best developers, engineers and designers who specialize in front-end development with emphasis on quality user interface 
+      design and experience, web development and the latest front-end technologies, broaching the subject on:
     </p>
 
     <div>
@@ -14,17 +12,16 @@
         class="list-wrapper"
       >
         <li>
-          How is beautiful and user-friendly design created?
+          User interface design processes.
         </li>
         <li>
-          How can the development process be secure and effective?
+          Clean, simple and user-friendly design
         </li>
         <li>
-          What are the technologies used by Estonian and international companies and what are the technologies of the
-          future?
+          Safe and effective development processes
         </li>
         <li>
-          What does the design process of intuitive user interfaces look like?
+          Technologies used by Estonian and international companies
         </li>
       </ul>
     </div>
@@ -38,6 +35,10 @@ export default {
 </script>
 
 <style scoped>
+  p, li {
+	text-shadow: 0px 1px 1px black;
+  }
+
   .list-wrapper {
     margin: 1rem 0 1rem 2rem;
     list-style-type: square;

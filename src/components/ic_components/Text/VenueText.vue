@@ -1,11 +1,10 @@
 <template>
   <div>
-    <h2 class="subtitle is-size-4">
-      TalTech Mektory
+    <h2 class="subtitle is-size-4 has-text-white">
+      TalTech Assembly Hall
     </h2>
     <p class="description is-size-5-desktop is-size-6-mobile">
-      Bringing together scientists, students and entrepreneurs to generate future facing ideas. Mektory inspires the growths of startups started by students
-      both in universities and secondary schools.
+      Insert text here
     </p>
     <p class="is-size-4">
       <font-awesome-icon
@@ -14,10 +13,11 @@
       />
       <span>
         <a
-          href="https://www.google.com/maps/place/TalTechi+innovatsiooni-+ja+ettev%C3%B5tluskeskus+MEKTORY/@59.3948705,24.6613989,15z/data=!4m2!3m1!1s0x0:0x8d2a6830f66a1a0d?ved=2ahUKEwiJoYffm_XgAhXrqIsKHU92CmcQ_BIwDXoECAYQCA"
+          href="https://www.google.com/maps/place/TalTech+%E2%80%93+Tallinn+University+of+Technology/@59.3959465,24.6699653,18z/data=!3m1!4b1!4m5!3m4!1s0x469295a9df77d59b:0xf00b36df26c7020!8m2!3d59.3959451!4d24.6710596"
           target="new"
         >
-          Raja 15, Tallinn
+          <img src="../../../assets/img/svg/geo-alt-fill.svg" width="35px" alt="location">
+          Ehitajate tee 5, Tallinn
         </a>
       </span>
     </p>
@@ -37,5 +37,17 @@ export default {
 
   .description {
     margin-bottom: 2rem;
+  }
+
+  h2, p {
+    text-shadow: 0px 1px 1px black;
+  }
+
+  img {
+    filter: drop-shadow(0px 1px 1px rgb(0 0 0 / 0.5));
+  }
+
+  span > a {
+	color: white;
   }
 </style>

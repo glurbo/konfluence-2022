@@ -5,18 +5,18 @@
         <h1>{{ title }}</h1>
       </div>
       <div class="columns is-multiline is-centered">
-        <div v-for="sponsor in sponsors" class="column is-one-quarter" v-bind:key="sponsor" >
-          <div class="container">
+        <div v-for="sponsor in sponsors" class="column is-one-third" v-bind:key="sponsor" >
+          <div class="sponsor-container">
             <a
               :href="sponsor.link"
               target="new"
             >
-			<img class="image2" src="../../../assets/img/background_bubble.png">
-            <img
-              class="image is-align-self-center"
-              :src="sponsor.imgUrl"
-              :alt="sponsor.company"
-            >
+              <img class="image2 is-align-self-center" src="../../../assets/img/background_bubble.png">
+              <img
+                class="image is-align-self-center"
+                :src="sponsor.imgUrl"
+                :alt="sponsor.company"
+              >
             </a>
           </div>
         </div>
@@ -46,13 +46,15 @@ export default {
 </script>
 
 <style scoped>
-  .container {
+  .sponsor-container {
     position: relative;
+	margin: 30px;
   }
 
   .title {
     text-align: center;
-    font-size: 3rem;
+    color: white;
+    text-shadow: 0px 1px 1px black;
   }
 
   .image {
@@ -67,14 +69,29 @@ export default {
 
   .image2 {
     position: absolute;
+    transition: transform .4s;
+    width: 230px;
+    height: 230px;
+    object-fit: scale-down;
+    display: block;
+    margin: auto;
+	top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
   }
 
-  .image:hover {
+  .sponsor-container:hover .image {
+    transform: scale(1.1);
+  }
+
+  .sponsor-container:hover .image2 {
     transform: scale(1.1);
   }
 
   .sponsors-wrapper {
 	border: none;
     background: transparent;
+	box-shadow: none;
   }
 </style>

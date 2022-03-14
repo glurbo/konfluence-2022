@@ -1,0 +1,17 @@
+extends:
+  - eslint:recommended
+  - plugin:vue/recommended
+root: true
+env:
+  es6: true
+  node: true
+  jquery: true
+  browser: true
+plugins:
+  - vue
+  - prettier
+rules:
+  indent: ["error", 2]
+  vue/html-indent: ["error", 2]
+  vue/require-default-prop: off
+  vue/html-self-enclosing: off

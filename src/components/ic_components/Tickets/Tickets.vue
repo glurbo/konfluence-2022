@@ -1,26 +1,28 @@
 <template>
   <div>
-    <h1 class="title">
+    <h1 class="title has-text-white">
       Tickets
     </h1>
     <div class="columns is-multiline is-centered">
       <div class="column">
         <ticket-card
-          title="Early bird"
-          student-price="4"
+          title="Regular bird"
+          taltech-student-price="FREE"
+          student-price="5"
           regular-price="10"
-          button-color="color-blue"
-          footer-date="07/04/2019"
+          footer-date="30/04/2022"
           footer-text="Available until"
         />
       </div>
       <div class="column">
         <ticket-card
           title="Late bird"
-          student-price="15"
-          regular-price="20"
-          button-color="color-green"
-          footer-text="Event day"
+          taltech-student-price="FREE"
+          student-price="10"
+          regular-price="15"
+          footer-date="31/04/2022"
+          footer-text="Available from"
+          disabled="true"
         />
       </div>
     </div>
@@ -37,5 +39,13 @@ export default {
 </script>
 
 <style scoped>
+.title {
+  text-shadow: 0px 1px 1px black;
+}
 
+.column {
+	display: flex;
+   align-items: center;
+   justify-content: center;
+}
 </style>

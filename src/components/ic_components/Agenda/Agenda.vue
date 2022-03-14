@@ -3,40 +3,43 @@
     <h1 class="title">
       Agenda
     </h1>
-    <div class="columns is-multiline">
-      <div
-        class="column is-half"
-		v-if="agendaItem.index <= 6"
-      >
-        <agenda-item
-          v-for="agendaItem in agendaItems" 
-          :key="agendaItem.index"
-          :title="agendaItem.title"
-          :speaker="agendaItem.speaker"
-          :time="agendaItem.time"
-          :image-src="agendaItem.imageSrc"
-          :company="agendaItem.company"
-          :language="agendaItem.language"
-          :disabled="agendaItem.disabled"
-          :sub-item="agendaItem.subItem"
-        />
+    <div v-if="!hasAgendaItems">
+      <div class="subtitle">To be announced soon!</div>
+    </div>
+    <div v-else class="columns is-multiline">
+      <div class="column is-half">
+        <div v-for="agendaItem in agendaItems" :key="agendaItem.index">
+          <agenda-item
+            v-if="agendaItem.index <= 6"
+            :key="agendaItem.index"
+            :title="agendaItem.title"
+            :speaker="agendaItem.speaker"
+            :time="agendaItem.time"
+            :image-src="agendaItem.imageSrc"
+            :company="agendaItem.company"
+            :language="agendaItem.language"
+            :disabled="agendaItem.disabled"
+            :sub-item="agendaItem.subItem"
+          />
+        </div>
+        
       </div>
-      <div
-        class="column is-half"
-		v-if="agendaItem.index >= 7"
-      >
-        <agenda-item
-          v-for="agendaItem in agendaItems"
-          :key="agendaItem.index"
-          :title="agendaItem.title"
-          :speaker="agendaItem.speaker"
-          :time="agendaItem.time"
-          :image-src="agendaItem.imageSrc"
-          :company="agendaItem.company"
-          :language="agendaItem.language"
-          :disabled="agendaItem.disabled"
-          :sub-item="agendaItem.subItem"
-        />
+      <div class="column is-half">
+        <div v-for="agendaItem in agendaItems" :key="agendaItem.index">
+          <agenda-item
+            v-if="agendaItem.index >= 7"
+            :key="agendaItem.index"
+            :title="agendaItem.title"
+            :speaker="agendaItem.speaker"
+            :time="agendaItem.time"
+            :image-src="agendaItem.imageSrc"
+            :company="agendaItem.company"
+            :language="agendaItem.language"
+            :disabled="agendaItem.disabled"
+            :sub-item="agendaItem.subItem"
+          />
+        </div>
+        
       </div>
     </div>
   </div>
@@ -45,7 +48,7 @@
 <script>
 import { agendaItems } from './AgendaItems';
 
-import AgendaItem from "./AgendaItem";
+import AgendaItem from "./AgendaItem.vue";
 
 export default {
   name: "Agenda",
@@ -54,6 +57,11 @@ export default {
     return {
       agendaItems: agendaItems
     }
+  },
+  computed: {
+    hasAgendaItems() {
+      return agendaItems.length > 0;
+    }
   }
 }
 </script>
@@ -61,5 +69,12 @@ export default {
 <style scoped>
   .title {
     margin-bottom: 50px !important;
+    color: white;
+    text-shadow: 0px 1px 1px black;
+  }
+
+  .subtitle {
+    color: white;
+    text-shadow: 0px 1px 1px black;
   }
 </style>

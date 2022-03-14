@@ -20,9 +20,6 @@
               :src="imageSrc"
               :alt="company"
             >
-            <!--<flag-->
-              <!--:iso="language"-->
-            <!--/>-->
           </div>
           <div v-if="disabled" class="agenda-item">
             <h1>To be announced!</h1>
@@ -75,6 +72,13 @@ export default {
     padding-right: 1.6rem;
     font-weight: 500;
     font-family: "Keep Calm", sans-serif;
+    color: white;
+    text-shadow: 0px 1px 1px black;
+  }
+
+  .subtitle {
+    color: white;
+    text-shadow: 0px 1px 1px black;
   }
 
   .speaker {
@@ -82,6 +86,8 @@ export default {
     font-weight: 400;
     padding-top: 1rem;
     margin-bottom: 0 !important;
+    color: white;
+    text-shadow: 0px 1px 1px black;
   }
 
   .wrapper {
@@ -118,18 +124,6 @@ export default {
     padding: 0 1.5rem 1.5rem 0;
   }
 
-  .flag-icon {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 1rem 1rem 0 0;
-    border-radius: 1em;
-    font-size: 1.5rem;
-    -moz-box-shadow:    inset 0 0 4px #000000;
-    -webkit-box-shadow: inset 0 0 4px #000000;
-    box-shadow:         inset 0 0 4px #000000;
-  }
-
   @media (max-width: 900px) {
     .wrapper {
       margin: 0 0.8rem 0 0.8rem;
@@ -138,10 +132,6 @@ export default {
     .image {
       width: 7rem;
       padding: 0 1rem 1rem 0;
-    }
-
-    .flag-icon {
-      font-size: 1.2rem;
     }
   }
 

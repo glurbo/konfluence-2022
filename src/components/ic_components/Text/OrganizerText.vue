@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p class="subtitle is-size-4-desktop">
+    <p class="subtitle is-size-4-desktop has-text-white">
       Student Council of TalTech's School of IT (ITÜK)
     </p>
     <p class="is-size-5-desktop is-size-6-mobile">
@@ -14,30 +14,18 @@
       </div>
       <div class="contact-logos columns is-mobile has-text-centered is-size-3 has-text-dark">
         <div class="column">
-          <a
-            href="https://www.facebook.com/ituk.ttu/"
-            target="new"
-          >
-            <font-awesome-icon
-              :icon="['fab', 'facebook']"
-              size="lg"
-            />
+          <a href="https://www.facebook.com/ituk.taltech" target="new">
+            <img src="../../../assets/img/svg/facebook.svg" width="50px" alt="facebook">
           </a>
         </div>
         <div class="column">
-          <a href="mailto:konfluence@ituk.ee">
-            <font-awesome-icon
-              icon="envelope"
-              size="lg"
-            />
+          <a href="https://www.instagram.com/ituk.taltech/" target="new">
+            <img src="../../../assets/img/svg/instagram.svg" width="50px" alt="instagram">
           </a>
         </div>
         <div class="column">
-          <a href="tel:+37253057474">
-            <font-awesome-icon
-              icon="phone"
-              size="lg"
-            />
+          <a href="https://ituk.ee/" target="new">
+            <img src="../../../assets/img/svg/ituk.svg" width="50px" alt="instagram">
           </a>
         </div>
       </div>
@@ -52,6 +40,19 @@ export default {
 </script>
 
 <style scoped>
+  
+  p {
+    text-shadow: 0px 1px 1px black;
+  }
+
+  img {
+    filter: drop-shadow(0px 1px 1px rgb(0 0 0 / 0.5));
+  }
+
+  .subtitle {
+    color: white;
+    text-shadow: 0px 1px 1px black;
+  }
 
   .contact-logos {
     margin-top: 1em;

@@ -55,6 +55,11 @@ export default {
 
 <style scoped>
 
+  .title {
+    text-shadow: 0px 1px 1px black;
+	color: white;
+  }
+
   .cardbox {
     display: flex;
     justify-content: space-between;

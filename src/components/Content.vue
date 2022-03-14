@@ -8,7 +8,7 @@
       title="About"
       text-component="AboutText"
       image-align="left"
-      image-path="https://i.imgur.com/kovnzYOh.jpg"
+      image-path="https://i.imgur.com/TDdcYdA.jpg"
     />
 
     <Speakers id="speakers" />
@@ -19,17 +19,13 @@
       title="Venue"
       text-component="VenueText"
       image-align="right"
-      image-path="https://i.imgur.com/13NGGM5h.jpg"
+      image-path="https://i.imgur.com/B0ZX9tD.png"
     />
 
-    <!-- <wrapper
-      id="workshops"
-      class="page-section"
-      title="Workshops"
-      text="TBA"
-    />-->
-
-    <agenda id="agenda" class="page-section" />
+    <agenda 
+      id="agenda" 
+      class="page-section" 
+    />
 
     <text-image-wrapper
       id="organizers"

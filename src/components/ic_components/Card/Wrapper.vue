@@ -27,15 +27,12 @@ export default {
 
 <style scoped>
     .wrapper {
-      border: 2px solid;
+      border: 2px solid rgba(255,255,255,0.1);
       border-radius: 25px;
-      border-color: #6AAED9;
-      /* border-image: linear-gradient(to right, red, blue) 1; */
       border-image-slice: 2;
       
-      background: linear-gradient(to right, #6AAED9, #966BF2);
+      background-color: rgba(255, 255, 255, 0.1);
     
-      /* background-color: #6AAED9; */
       border-radius: 1.5rem;
       overflow: hidden;
       padding: 0;
@@ -43,6 +40,8 @@ export default {
       text-align: justify;
       z-index: 10;
       position: relative;
+      box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+      background: linear-gradient(320DEG,  rgba(255,255,255,0.1),  rgba(255,255,255,0.4) 99%);
     }
 
    .text-padding {

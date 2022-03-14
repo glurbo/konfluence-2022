@@ -5,6 +5,10 @@
         {{ title }}
       </p>
       <p class="price is-size-1">
+        {{ taltechStudentPrice }}
+        <sup class="is-size-5"> / TalTech student </sup>
+      </p>
+      <p class="price is-size-1">
         <sup class="is-size-4"> € </sup>
         {{ studentPrice }}
         <sup class="is-size-5"> / student </sup>
@@ -15,8 +19,8 @@
         <sup class="is-size-5"> / regular </sup>
       </p>
       <p
-        class="subheading has-text-grey is-size-6 is-uppercase"
         v-if="footerText != null"
+        class="subheading has-text-white is-size-6 is-uppercase"
       >
         {{ footerText }} <strong>{{ footerDate }}</strong>
       </p>
@@ -24,11 +28,9 @@
     <footer class="card-footer">
       <a
         class="button card-footer-item is-size-4"
-        :class="buttonColor"
         :disabled="disabled"
         href="https://fienta.com/konfluence-2022?0c11e2ff3e1679003747392bb2af3c1f="
       >
-        <!-- TODO: fienta link -->
         BUY
       </a>
     </footer>
@@ -40,6 +42,7 @@ export default {
   name: "TicketCard",
   props: {
     title: String,
+    taltechStudentPrice: String,
     studentPrice: String,
     regularPrice: String,
     disabled: Boolean,
@@ -53,11 +56,38 @@ export default {
 <style scoped>
 .ticket-card {
   border: 2px solid;
-  border-color: #6AAED9;
   max-width: 22rem;
   margin: 2rem;
   border-radius: 1.5rem;
   overflow: hidden;
+  background: linear-gradient(320DEG,  rgba(255,255,255,0.1),  rgba(255,255,255,0.4) 99%);
+  color: white;
+  border: 2px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.card-footer-item {
+  background-color: hsla(152, 96%, 48%, 0.8);
+  border: 0px;
+  color: white;
+  text-shadow: 0px 1px 1px black;
+}
+
+.card-footer-item:hover {
+  color: white;
+}
+
+.card-footer-item[disabled] {
+  background-color: hsla(152, 96%, 48%, 0.8);
+  border: 0px;
+  color: white;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.card-footer {
+	border:  0px solid rgba(255,255,255,0.1);
 }
 
 .z-index-above-bubbles {
@@ -68,67 +98,20 @@ export default {
 .price {
   font-family: sans-serif;
   margin-bottom: 2rem !important;
+  color: white;
 }
 
 .title {
   margin-top: 1rem;
   margin-bottom: 4rem !important;
+  color: white;
 }
 
 sup {
-  color: gray;
+  color: white;
 }
 
-/* @font-face {
-    font-family: "Keep Calm";
-    src: url(../../../assets/fonts/KeepCalm-Medium.ttf) format('truetype')
-  } */
-
-/*red*/
-.color-red {
-  background-color: #fc5c65;
-  color: white;
-  border: transparent;
-}
-
-/*blue*/
-.color-blue {
-  background-color: #45aaf2;
-  color: white;
-  border: transparent;
-}
-
-/*green*/
-.color-green {
-  background-color: #26de81;
-  color: white;
-  border: transparent;
-}
-
-/*red*/
-.color-red[disabled] {
-  background-color: #fc5c65;
-  color: white;
-  border: transparent;
-  pointer-events: none;
-  cursor: not-allowed;
-}
-
-/*blue*/
-.color-blue[disabled] {
-  background-color: #45aaf2;
-  color: white;
-  border: transparent;
-  pointer-events: none;
-  cursor: not-allowed;
-}
-
-/*green*/
-.color-green[disabled] {
-  background-color: #26de81;
-  color: white;
-  border: transparent;
-  pointer-events: none;
-  cursor: not-allowed;
+p {
+  text-shadow: 0px 1px 1px black;
 }
 </style>
