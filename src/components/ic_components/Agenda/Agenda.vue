@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="z-index">
     <h1 class="title">
       Agenda
     </h1>
@@ -76,5 +76,10 @@ export default {
   .subtitle {
     color: white;
     text-shadow: 0px 1px 1px black;
+  }
+
+  .z-index {
+    z-index: 20;
+    position: relative;
   }
 </style>

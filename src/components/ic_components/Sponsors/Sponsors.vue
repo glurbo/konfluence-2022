@@ -1,9 +1,9 @@
 <template>
   <wrapper class="sponsors-wrapper">
     <template slot="content">
-      <div class="title">
-        <h1>{{ title }}</h1>
-      </div>
+      <h1 class="title">
+        Sponsors
+      </h1>
       <div class="columns is-multiline is-centered">
         <div v-for="sponsor in sponsors" class="column is-one-third" v-bind:key="sponsor" >
           <div class="sponsor-container">

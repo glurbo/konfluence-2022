@@ -40,6 +40,11 @@ export default {
 
 <style scoped>
 
+.tickets {
+  z-index: 20;
+  position: relative;
+}
+
 .title {
   text-shadow: 0px 1px 1px black;
 }

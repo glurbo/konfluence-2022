@@ -1,39 +1,41 @@
 <template>
-  <div class="card ticket-card">
-    <div class="card-content">
-      <p class="title is-size-3">
-        {{ title }}
-      </p>
-      <p class="price is-size-1">
-        {{ taltechStudentPrice }}
-        <sup class="is-size-5"> / TalTech student </sup>
-      </p>
-      <p class="price is-size-1">
-        <sup class="is-size-4"> € </sup>
-        {{ studentPrice }}
-        <sup class="is-size-5"> / student </sup>
-      </p>
-      <p class="price is-size-1">
-        <sup class="is-size-4"> € </sup>
-        {{ regularPrice }}
-        <sup class="is-size-5"> / regular </sup>
-      </p>
-      <p
-        v-if="footerText != null"
-        class="subheading has-text-white is-size-6 is-uppercase"
-      >
-        {{ footerText }} <strong>{{ footerDate }}</strong>
-      </p>
+  <div class="z-index-above-bubbles">
+    <div class="card ticket-card">
+      <div class="card-content">
+        <p class="title is-size-3">
+          {{ title }}
+        </p>
+        <p class="price is-size-1">
+          {{ taltechStudentPrice }}
+          <sup class="is-size-5"> / TalTech student </sup>
+        </p>
+        <p class="price is-size-1">
+          <sup class="is-size-4"> € </sup>
+          {{ studentPrice }}
+          <sup class="is-size-5"> / student </sup>
+        </p>
+        <p class="price is-size-1">
+          <sup class="is-size-4"> € </sup>
+          {{ regularPrice }}
+          <sup class="is-size-5"> / regular </sup>
+        </p>
+        <p
+          v-if="footerText != null"
+          class="subheading has-text-white is-size-6 is-uppercase"
+        >
+          {{ footerText }} <strong>{{ footerDate }}</strong>
+        </p>
+      </div>
+      <footer class="card-footer">
+        <a
+          class="button card-footer-item is-size-4"
+          :disabled="disabled"
+          href="https://fienta.com/konfluence-2022?0c11e2ff3e1679003747392bb2af3c1f="
+        >
+          BUY
+        </a>
+      </footer>
     </div>
-    <footer class="card-footer">
-      <a
-        class="button card-footer-item is-size-4"
-        :disabled="disabled"
-        href="https://fienta.com/konfluence-2022?0c11e2ff3e1679003747392bb2af3c1f="
-      >
-        BUY
-      </a>
-    </footer>
   </div>
 </template>
 

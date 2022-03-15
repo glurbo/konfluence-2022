@@ -1,6 +1,6 @@
 <template>
   <div id="content" class="container">
-    <tickets id="tickets" class="page-section" />
+    <Tickets id="tickets" class="page-section" />
 
     <text-image-wrapper
       id="about"
