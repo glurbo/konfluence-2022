@@ -60,7 +60,7 @@ export default {
   width: 100%;
   border: 2px solid;
   max-width: 22rem;
-  margin: 2rem;
+  margin: 1rem;
   border-radius: 1.5rem;
   overflow: hidden;
   background: linear-gradient(320DEG,  rgba(255,255,255,0.1),  rgba(255,255,255,0.4) 99%);
