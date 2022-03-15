@@ -157,8 +157,7 @@ export default {
    border-radius: 15px;
    background-color: rgba(255,255,255,0.1);
    border: 2px solid rgba(255,255,255,0.2);
-   /* doesn't work? */
-   backdrop-filter: blur(5px);
+   /* backdrop-filter: blur(5px); */
    
    color: rgba(255,255,255,1);
    text-shadow: 0px 1px 1px black;
