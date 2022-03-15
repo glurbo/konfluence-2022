@@ -30,7 +30,7 @@
         <a
           class="button card-footer-item is-size-4"
           :disabled="disabled"
-          href="https://fienta.com/konfluence-2022?0c11e2ff3e1679003747392bb2af3c1f="
+          href="https://fienta.com/konfluence-2022"
         >
           BUY
         </a>
