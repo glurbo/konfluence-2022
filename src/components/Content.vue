@@ -19,7 +19,7 @@
       title="Venue"
       text-component="VenueText"
       image-align="right"
-      image-path="https://i.imgur.com/B0ZX9tD.png"
+      image-path="https://i.imgur.com/h520XBn.jpg"
     />
 
     <agenda 

@@ -63,8 +63,9 @@ export default {
   background: linear-gradient(320DEG,  rgba(255,255,255,0.1),  rgba(255,255,255,0.4) 99%);
   color: white;
   border: 2px solid rgba(255,255,255,0.1);
-  backdrop-filter: blur( 4px );
   -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  z-index: 5;
 }
 
 .card-footer-item {
@@ -105,6 +106,7 @@ export default {
   margin-top: 1rem;
   margin-bottom: 4rem !important;
   color: white;
+  z-index: 10;
 }
 
 sup {

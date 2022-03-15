@@ -1,9 +1,13 @@
 <template>
-  <div 
+  <div class="bubble" :class="getRandomSize()" :style="{ top: top + 'px', left: left + 'px'}">
+    <img src="../../assets/img/svg/bubble/Ellipse 36.svg"  alt="">
+
+  </div>
+  <!-- <div 
     class="bubble"
     :class="[getRandomSize(), getRandomColor()]"
     :style="{ top: top + 'px', left: left + 'px' }"
-  />
+  /> -->
 </template>
 
 <script>
@@ -32,9 +36,10 @@ export default {
 </script>
 
 <style scoped>
+
   .bubble {
-    border-radius: 100%;
     position: absolute;
+	border-radius: 100%;
     opacity: 0.7;
   }
 

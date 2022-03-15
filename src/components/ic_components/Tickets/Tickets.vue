@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="tickets">
     <h1 class="title has-text-white">
       Tickets
     </h1>
@@ -39,6 +39,7 @@ export default {
 </script>
 
 <style scoped>
+
 .title {
   text-shadow: 0px 1px 1px black;
 }

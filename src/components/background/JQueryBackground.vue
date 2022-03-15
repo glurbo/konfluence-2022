@@ -89,18 +89,19 @@ function parallaxScroll() {
   #parallax-lvl-0, #parallax-lvl-1, #parallax-lvl-2, #parallax-lvl-3 {
     position: absolute;
     top: 0;
+	z-index: 1;
   }
 
   #parallax-lvl-1 {
-    z-index: 1;
+    z-index: 2;
   }
 
   #parallax-lvl-2 {
-    z-index: 5;
+    z-index: 3;
   }
 
   #parallax-lvl-3 {
-    z-index: 15;
+    z-index: 4;
   }
 
   @media (max-width: 900px) {

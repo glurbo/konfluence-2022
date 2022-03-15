@@ -4,7 +4,6 @@
       TalTech Assembly Hall
     </h2>
     <p class="description is-size-5-desktop is-size-6-mobile">
-      Insert text here
     </p>
     <p class="is-size-4">
       <font-awesome-icon

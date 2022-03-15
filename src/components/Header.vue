@@ -158,7 +158,7 @@ export default {
    background-color: rgba(255,255,255,0.1);
    border: 2px solid rgba(255,255,255,0.2);
    /* doesn't work? */
-   backdrop-filter: blur(30px);
+   backdrop-filter: blur(5px);
    
    color: rgba(255,255,255,1);
    text-shadow: 0px 1px 1px black;
@@ -173,13 +173,13 @@ export default {
    align-items: center;
    justify-content: center;
 
-    -o-transition: all .2s ease-out;
-    -webkit-transition: all .2s ease-out;
-    transition: all .2s ease-out;
+   -o-transition: all .2s ease-out;
+   -webkit-transition: all .2s ease-out;
+   transition: all .2s ease-out;
 
-    background-size:1px 300px;  
-    overflow: hidden;
-	box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+   background-size:1px 300px;  
+   overflow: hidden;
+   box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
  }
 
  .glass-button:hover {
