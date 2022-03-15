@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <!-- <j-query-background /> -->
+    <j-query-background />
     <Header />
     <Content />
     <Footer />
@@ -11,13 +11,15 @@
 import Footer from './components/Footer.vue';
 import Header from './components/Header.vue';
 import Content from './components/Content.vue';
+import JQueryBackground from './components/background/JQueryBackground'
 
 export default {
   name: 'App',
   components: {
     Header,
     Content,
-    Footer
+    Footer,
+    JQueryBackground
   },
   mounted() {
     let fientaScript = document.createElement('script');
