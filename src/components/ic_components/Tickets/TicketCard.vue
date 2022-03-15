@@ -1,6 +1,6 @@
 <template>
   <div class="z-index-above-bubbles">
-    <div class="card ticket-card">
+    <div class="ticket-card">
       <div class="card-content">
         <p class="title is-size-3">
           {{ title }}
@@ -57,6 +57,7 @@ export default {
 
 <style scoped>
 .ticket-card {
+  width: 100%;
   border: 2px solid;
   max-width: 22rem;
   margin: 2rem;

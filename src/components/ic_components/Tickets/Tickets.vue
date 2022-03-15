@@ -50,8 +50,12 @@ export default {
 }
 
 .column {
-	display: flex;
+   display: flex;
    align-items: center;
    justify-content: center;
+}
+
+.columns {
+  width: 100%;
 }
 </style>
