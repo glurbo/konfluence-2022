@@ -63,7 +63,7 @@ export default {
   margin: 1rem;
   border-radius: 1.5rem;
   overflow: hidden;
-  background: linear-gradient(320DEG,  rgba(255,255,255,0.1),  rgba(255,255,255,0.4) 99%);
+  background: linear-gradient(320DEG,  rgba(255,255,255,0.1),  rgba(255,255,255,0.4) 150%);
   color: white;
   border: 2px solid rgba(255,255,255,0.1);
   /* -webkit-backdrop-filter: blur(5px);
@@ -117,6 +117,6 @@ sup {
 }
 
 p {
-  text-shadow: 0px 1px 1px black;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
 }
 </style>

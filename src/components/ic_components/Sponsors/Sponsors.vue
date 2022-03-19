@@ -54,7 +54,7 @@ export default {
   .title {
     text-align: center;
     color: white;
-    text-shadow: 0px 1px 1px black;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
   }
 
   .image {

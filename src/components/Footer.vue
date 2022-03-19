@@ -60,11 +60,11 @@ img {
   max-height: 100px;
   margin: auto;
   display: block;
-  filter: drop-shadow(0px 1px 1px rgb(0 0 0 / 0.5));
+  filter: drop-shadow(0px 1px 1px rgb(0 0 0 / 0.3));
 }
 
 p {
-  text-shadow: 0px 1px 1px black;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width: 770px) {

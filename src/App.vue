@@ -43,8 +43,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   /* background: linear-gradient(55deg, #6BF2F2 0%, #6AAED9 51%, #966BF2 85%); */
-  background: linear-gradient(to left, #6AAED9, hsla(277, 100%, 65%, 0) 70%),
-  linear-gradient(24deg,#6B7FF2, hsla(208, 100%, 50%, 0) 70%), 
+  background: linear-gradient(to left, #6AAED9, hsla(277, 100%, 65%, 0) 90%),
+  linear-gradient(24deg,#6B7FF2, hsla(208, 100%, 50%, 0) 90%), 
   linear-gradient(178deg,#966BF2, hsla(167, 100%, 50%, 0) 70%);
   color: white;	
 }

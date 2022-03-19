@@ -73,12 +73,12 @@ export default {
     font-weight: 500;
     font-family: "Keep Calm", sans-serif;
     color: white;
-    text-shadow: 0px 1px 1px black;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
   }
 
   .subtitle {
     color: white;
-    text-shadow: 0px 1px 1px black;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
   }
 
   .speaker {
@@ -87,7 +87,7 @@ export default {
     padding-top: 1rem;
     margin-bottom: 0 !important;
     color: white;
-    text-shadow: 0px 1px 1px black;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
   }
 
   .wrapper {

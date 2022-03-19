@@ -65,7 +65,7 @@ export default {
 <style scoped>
   .title, .subtitle {
     color: white;
-	text-shadow: 0px 1px 1px black;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
   }
 
   .speakers {
@@ -85,7 +85,7 @@ export default {
 	background-color: rgba(255,255,255,0.1);
 	background: linear-gradient(320DEG,  rgba(255,255,255,0.1),  rgba(255,255,255,0.4) 99%);
 	color: white;
-	text-shadow: 0px 1px 1px black;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
   }
 
   img {

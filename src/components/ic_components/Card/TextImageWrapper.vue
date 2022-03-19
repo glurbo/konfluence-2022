@@ -56,7 +56,7 @@ export default {
 <style scoped>
 
   .title {
-    text-shadow: 0px 1px 1px black;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
 	color: white;
   }
 
