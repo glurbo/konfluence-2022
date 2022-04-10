@@ -23,5 +23,10 @@ export const sponsors = [
     company: 'Vitamin Well',
     imgUrl: 'https://i.imgur.com/UTOLq2H.png',
     link: 'https://www.vitaminwell.com/'
+  },
+  {
+    company: 'Kadarbiku',
+    imgUrl: 'https://i.imgur.com/dyrri9u.png',
+    link: 'https://kadarbiku.ee/en/'
   }
 ];

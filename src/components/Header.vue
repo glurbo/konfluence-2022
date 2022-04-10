@@ -94,7 +94,7 @@ export default {
   .subtitle {
     text-align: center;
 	color: white;
-	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+	text-shadow: 1px 1px 3px rgb(107, 127, 242, 0.2);
   }
 
   .hero {
@@ -160,7 +160,7 @@ export default {
    /* backdrop-filter: blur(5px); */
    
    color: rgba(255,255,255,1);
-   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+   text-shadow: 1px 1px 3px rgb(107, 127, 242, 0.2);
    font-size: 16px;
    font-weight: 700;
    letter-spacing: 2px;

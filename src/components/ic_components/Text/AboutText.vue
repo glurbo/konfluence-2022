@@ -36,7 +36,7 @@ export default {
 
 <style scoped>
   p, li {
-	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+	text-shadow: 1px 1px 3px rgb(107, 127, 242, 0.2);
   }
 
   .list-wrapper {

@@ -75,7 +75,7 @@ export default {
   background-color: hsla(152, 96%, 48%, 0.8);
   border: 0px;
   color: white;
-  text-shadow: 0px 1px 1px black;
+  text-shadow: 1px 1px 3px rgb(107, 127, 242, 0.2);
 }
 
 .card-footer-item:hover {
@@ -117,6 +117,6 @@ sup {
 }
 
 p {
-  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 3px rgb(107, 127, 242, 0.2);
 }
 </style>

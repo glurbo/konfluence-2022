@@ -46,6 +46,7 @@ export default {
   background: linear-gradient(to left, #6AAED9, hsla(277, 100%, 65%, 0) 90%),
   linear-gradient(24deg,#6B7FF2, hsla(208, 100%, 50%, 0) 90%), 
   linear-gradient(178deg,#966BF2, hsla(167, 100%, 50%, 0) 70%);
-  color: white;	
+  background-color: #966BF2;
+  color: white;
 }
 </style>

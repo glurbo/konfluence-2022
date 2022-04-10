@@ -39,11 +39,11 @@ export default {
   }
 
   h2, p {
-    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 3px rgb(107, 127, 242, 0.2);
   }
 
   img {
-    filter: drop-shadow(0px 1px 1px rgb(0 0 0 / 0.2));
+    /* filter: drop-shadow(0px 1px 1px rgb(0 0 0 / 0.2)); */
   }
 
   span > a {

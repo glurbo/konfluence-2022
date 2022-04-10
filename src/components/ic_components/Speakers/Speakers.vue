@@ -1,20 +1,24 @@
 <template>
   <div class="z-index">
-    <h1 class="title">
-      Speakers
-    </h1>
+    <h1 class="title">Speakers</h1>
     <div v-if="!hasSpeakers">
       <div class="subtitle">To be announced soon!</div>
     </div>
     <div v-else class="speakers">
-      <template v-for="speaker in speakers" >
-        <div v-bind:key="speaker">
+      <template>
+        <div v-for="speaker in speakers" v-bind:key="speaker">
           <figure class="">
-            <img
-              :src="speaker.image"
-              alt="Placeholder image"
-              class="is-rounded"
-            >
+            <div class="image-container">
+              <img
+                :src="speaker.image"
+                alt="Placeholder image"
+                class="is-rounded speaker-image"
+              />
+              <img
+                src="../../../assets/img/svg/bubble/Ellipse 18.svg"
+                class="speaker-image-bubble speaker-image"
+              />
+            </div>
           </figure>
           <div class="card speaker-card">
             <div class="card-content">
@@ -23,12 +27,15 @@
                   <p class="title is-4">
                     {{ speaker.name }}
                   </p>
-                  <p class="subtitle is-6">
+                  <p class="subtitle is-8 has-text-weight-medium">
                     {{ speaker.company }}
+                  </p>
+                  <p class="subtitle is-8 has-text-weight-medium">
+                    {{ speaker.title }}
                   </p>
                 </div>
               </div>
-  
+
               <div class="content">
                 <div class="overflow-scroll-gradient">
                   <div class="overflow-scroll-gradient__scroller">
@@ -45,83 +52,103 @@
 </template>
 
 <script>
-import { speakers } from './Speakers';
+import { speakers } from "./Speakers";
 
 export default {
   name: "Speakers",
   data() {
     return {
-      speakers: speakers
-    }
+      speakers: speakers,
+    };
   },
   computed: {
     hasSpeakers() {
       return speakers.length > 0;
-    }
-  }
-}
+    },
+  },
+};
 </script>
 
 <style scoped>
-  .title, .subtitle {
-    color: white;
-	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
-  }
+.title,
+.subtitle {
+  color: white;
+}
 
+.speakers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 4rem;
+  justify-content: center;
+}
+
+.speaker-card {
+  max-width: 20rem;
+  margin: 2rem;
+  border-radius: 1.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.1);
+  background: linear-gradient(
+    320deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.3) 150%
+  );
+  color: white;
+  text-shadow: 1px 1px 3px rgb(107, 127, 242, 0.2);
+}
+
+.speaker-image {
+  width: 273px;
+  height: 273px;
+  object-fit: cover;
+  border-radius: 100%;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1),
+    0 0px 0 1px rgba(10, 10, 10, 0.02);
+}
+
+.image-container {
+  position: relative;
+}
+.speaker-image-bubble {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  right: 10%;
+  bottom: 12%;
+}
+
+.speaker-text {
+  font-size: 1.1rem;
+}
+
+.content {
+  text-align: justify;
+  white-space: pre-line;
+}
+
+.overflow-scroll-gradient {
+  position: relative;
+}
+
+.z-index {
+  z-index: 20;
+  position: relative;
+}
+
+@media (max-width: 1000px) {
   .speakers {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0 4rem;
-    justify-content: center;
+    margin: 0;
   }
 
   .speaker-card {
-    max-width: 20rem;
-    margin: 2rem;
-    border-radius: 1.5rem;
-    border: 2px solid rgba(255,255,255,0.1);
-    overflow: hidden;
-	background-color: rgba(255,255,255,0.1);
-	background: linear-gradient(320DEG,  rgba(255,255,255,0.1),  rgba(255,255,255,0.4) 99%);
-	color: white;
-	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+    margin: 1rem 0;
   }
 
-  img {
-	width: 273px;
-	height: 273px;
-    object-fit: cover;
-	border-radius: 100%;
-	border: 2px solid rgba(255,255,255,0.1);
-	box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+  .speaker-image-bubble {
+    right: 1%;
   }
-
-  .content {
-    text-align: justify;
-    white-space: pre-line;
-  }
-
-  .z-index {
-    z-index: 10;
-    position: relative;
-  }
-  
-  .speaker-text {
-    padding-bottom: 1rem; 
-  }
-
-  .overflow-scroll-gradient {
-    position: relative;
-  }
-
-  @media (max-width: 1000px) {
-    .speakers {
-      margin: 0;
-    }
-
-    .speaker-card {
-      margin: 1rem 0;
-    }
-  }
+}
 </style>

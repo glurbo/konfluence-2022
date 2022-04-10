@@ -70,12 +70,12 @@ export default {
   .title {
     margin-bottom: 50px !important;
     color: white;
-    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+    /* text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5); */
   }
 
   .subtitle {
     color: white;
-    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+    /* text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5); */
   }
 
   .z-index {

@@ -42,16 +42,16 @@ export default {
 <style scoped>
   
   p {
-    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 3px rgb(107, 127, 242, 0.2);
   }
 
   img {
-    filter: drop-shadow(0px 1px 1px rgb(0 0 0 / 0.3));
+    /* filter: drop-shadow(0px 1px 1px rgb(0 0 0 / 0.3)); */
   }
 
   .subtitle {
     color: white;
-    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 3px rgb(107, 127, 242, 0.2);
   }
 
   .contact-logos {
