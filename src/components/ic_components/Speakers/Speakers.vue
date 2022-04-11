@@ -27,10 +27,10 @@
                   <p class="title is-4">
                     {{ speaker.name }}
                   </p>
-                  <p class="subtitle is-8 has-text-weight-medium">
+                  <p class="subtitle has-text-weight-medium">
                     {{ speaker.company }}
                   </p>
-                  <p class="subtitle is-8 has-text-weight-medium">
+                  <p class="is-size-5 has-text-weight-medium">
                     {{ speaker.title }}
                   </p>
                 </div>
