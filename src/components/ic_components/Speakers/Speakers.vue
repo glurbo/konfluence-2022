@@ -1,10 +1,10 @@
 <template>
   <div class="z-index">
     <h1 class="title">Speakers</h1>
-    <div v-if="!hasSpeakers">
-      <div class="subtitle">To be announced soon!</div>
+    <div>
+      <div class="subtitle tba">More to be announced soon!</div>
     </div>
-    <div v-else class="speakers">
+    <div class="speakers">
       <template>
         <div v-for="speaker in speakers" v-bind:key="speaker">
           <figure class="">
@@ -136,6 +136,10 @@ export default {
 .z-index {
   z-index: 20;
   position: relative;
+}
+
+.tba {
+  margin-bottom: 20px;
 }
 
 @media (max-width: 1000px) {
