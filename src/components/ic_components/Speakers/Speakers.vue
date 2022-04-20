@@ -8,7 +8,23 @@
       <template>
         <div v-for="speaker in speakers" v-bind:key="speaker">
           <figure class="">
-            <div class="image-container">
+            <div v-if="speaker.image2 != null" class="image-container">
+              <img
+                :src="speaker.image"
+                alt="Placeholder image"
+                class="is-rounded speaker-image-first"
+              />
+              <img
+                :src="speaker.image2"
+                alt="Placeholder image"
+                class="is-rounded speaker-image-second"
+              />
+              <img
+                src="../../../assets/img/svg/bubble/Ellipse 18.svg"
+                class="speaker-image-bubble-second speaker-image"
+              />
+            </div>
+            <div v-else class="image-container">
               <img
                 :src="speaker.image"
                 alt="Placeholder image"
@@ -30,6 +46,16 @@
                   <p class="subtitle has-text-weight-medium">
                     {{ speaker.company }}
                   </p>
+                  <p v-if="speaker.name2 != null" class="subtitle" style="margin-bottom:2.5rem;">
+                    &
+                  </p>
+                  <p v-if="speaker.name2 != null" class="title is-4">
+                    {{ speaker.name2 }}
+                  </p>
+                  <p v-if="speaker.company2 != null" class="subtitle has-text-weight-medium">
+                    {{ speaker.company2 }}
+                  </p>
+                  
                   <p class="is-size-5 has-text-weight-medium">
                     {{ speaker.title }}
                   </p>
@@ -111,6 +137,7 @@ export default {
 
 .image-container {
   position: relative;
+  height: 280px;
 }
 .speaker-image-bubble {
   position: absolute;
@@ -118,6 +145,38 @@ export default {
   height: 75px;
   right: 10%;
   bottom: 12%;
+}
+
+.speaker-image-first {
+  position: relative;
+  top: 25%;
+  left: -20%;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1),
+    0 0px 0 1px rgba(10, 10, 10, 0.02);
+}
+
+.speaker-image-second {
+  position: absolute;
+  right: 1%;
+  top: 1%;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1),
+    0 0px 0 1px rgba(10, 10, 10, 0.02);
+}
+
+.speaker-image-bubble-second {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  right: 39%;
+  bottom: 0;
 }
 
 .speaker-text {
