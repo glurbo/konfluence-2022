@@ -23,4 +23,11 @@ export const speakers = [
     title: 'Design System for Scale',
     text: "Kateryna - Product designer with 10 years of experience in the design field. Focused on creating seamless user experience within Glia products, as well as ensuring effortless product design operations.\nSiim - Technical lead of Front-End Platform team. Focused on front-end infrastructure and developer experience that supports efficiency and productivity.\nWe'll talk about our (Glia's) journey of starting and building up the design system in times of rapid growth. We'll cover design and frontend perspective, our wins and fails along the way, and our plans for the future."
   },
+  {
+    image: 'https://i.imgur.com/0dxLuJ4.jpg',
+    name: 'Mikk Mangus',
+    company: 'Engineering Manager @ Pipedrive',
+    title: 'Applying FE techniques in the physical world',
+    text: 'Mikk is an Estonian IT College graduate and former lecturer. He has been working as an engineer both on the front-end and back-end side.  Fun fact - he also likes the smell of hardware which explains the eagerness of his to deploy all sorts of automations at his home. Unexpectedly, he has realized front-end development and home automation have much in common.'
+  },
 ];

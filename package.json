@@ -25,6 +25,7 @@
     "vue-flag-icon": "^1.0.6",
     "vue-parallaxy": "^1.1.1",
     "vue-scrollto": "^2.13.0",
+    "vuescroll": "^4.17.3",
     "vuetify": "^1.4.4"
   },
   "devDependencies": {

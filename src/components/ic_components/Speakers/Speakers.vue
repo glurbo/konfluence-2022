@@ -61,7 +61,6 @@
                   </p>
                 </div>
               </div>
-
               <div class="content">
                 <div class="overflow-scroll-gradient">
                   <div class="overflow-scroll-gradient__scroller">
@@ -85,6 +84,12 @@ export default {
   data() {
     return {
       speakers: speakers,
+      ops: {
+        vuescroll: {},
+        scrollPanel: {},
+        rail: {},
+        bar: {}
+      }
     };
   },
   computed: {
@@ -111,6 +116,7 @@ export default {
 
 .speaker-card {
   max-width: 20rem;
+  /* height: 30rem; */
   margin: 2rem;
   border-radius: 1.5rem;
   border: 2px solid rgba(255, 255, 255, 0.1);
@@ -200,6 +206,36 @@ export default {
 .tba {
   margin-bottom: 20px;
 }
+
+/* .overflow-scroll-gradient {
+    position: relative;
+  }
+
+  .overflow-scroll-gradient::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 25px;
+    background: linear-gradient(
+            rgba(255, 255, 255, 0.001),
+            white
+    ); 
+    pointer-events: none;
+  }
+  .overflow-scroll-gradient__scroller {
+    overflow-y: scroll;
+    width: 100%;
+    height: 200px;
+    line-height: 1.2;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .overflow-scroll-gradient__scroller::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  } */
 
 @media (max-width: 1000px) {
   .speakers {
