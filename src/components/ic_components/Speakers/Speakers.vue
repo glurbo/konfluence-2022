@@ -249,5 +249,15 @@ export default {
   .speaker-image-bubble {
     right: 1%;
   }
+
+  .speaker-image-first {
+    width: 180px;
+    height: 180px;
+  }
+
+  .speaker-image-second {
+    width: 180px;
+    height: 180px;
+  }
 }
 </style>
