@@ -20,7 +20,7 @@ export const speakers = [
     name2: 'Siim Halapuu',
     company: 'Product designer @ Glia',
     company2: 'Tech Lead @ Glia',
-    title: 'Design System for Scale',
+    title: 'Design and Front-End for Scale',
     text: "Kateryna - Product designer with 10 years of experience in the design field. Focused on creating seamless user experience within Glia products, as well as ensuring effortless product design operations.\nSiim - Technical lead of Front-End Platform team. Focused on front-end infrastructure and developer experience that supports efficiency and productivity.\nWe'll talk about our (Glia's) journey of starting and building up the design system in times of rapid growth. We'll cover design and frontend perspective, our wins and fails along the way, and our plans for the future."
   },
   {
