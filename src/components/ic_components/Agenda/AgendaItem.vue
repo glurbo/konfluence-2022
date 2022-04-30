@@ -9,17 +9,20 @@
       <wrapper v-if="!subItem" :class="disabled ? 'agenda-disabled' : ''">
         <template slot="content">
           <div v-if="!disabled" class="agenda-item" >
-            <h1 class="title is-size-4 is-size-5-mobile">
+            <h1 class="title is-4 is-size-5-mobile">
               {{ title }}
             </h1>
-            <h2 class="speaker subtitle is-size-4 is-size-5-mobile">
-              {{ speaker }}
-            </h2>
-            <img
-              class="image"
-              :src="imageSrc"
-              :alt="company"
-            >
+            <div class="name-company-container">
+              <h2 class="speaker is-size-4 is-size-5-mobile">
+                {{ speaker }}
+              </h2>
+              <img
+                class="image"
+                :src="imageSrc"
+                :alt="company"
+              >
+            </div>
+            
           </div>
           <div v-if="disabled" class="agenda-item">
             <h1>To be announced!</h1>
@@ -67,27 +70,30 @@ export default {
     padding: 1.5rem;
   }
 
+  .name-company-container {
+	display: flex;
+	flex-direction: row;
+	/* flex-flow: column wrap; */
+	justify-content: space-between;
+	align-items: center;
+  }
+
   .title {
     margin-bottom: 0 !important;
     padding-right: 1.6rem;
-    font-weight: 500;
     font-family: "Keep Calm", sans-serif;
     color: white;
-    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
   }
 
   .subtitle {
     color: white;
-    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
   }
 
   .speaker {
-    font-style: italic;
     font-weight: 400;
     padding-top: 1rem;
     margin-bottom: 0 !important;
     color: white;
-    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
   }
 
   .wrapper {
@@ -117,11 +123,11 @@ export default {
   }
 
   .image {
-    position: absolute;
+    /* position: absolute;
     bottom: 0;
-    right: 0;
+    right: 0; */
     width: 9rem;
-    padding: 0 1.5rem 1.5rem 0;
+    padding-right: 1.5rem;
   }
 
   @media (max-width: 900px) {
@@ -131,7 +137,7 @@ export default {
 
     .image {
       width: 7rem;
-      padding: 0 1rem 1rem 0;
+      padding-right: 1rem;
     }
   }
 

@@ -10,7 +10,7 @@
       <div class="column is-half">
         <div v-for="agendaItem in agendaItems" :key="agendaItem.index">
           <agenda-item
-            v-if="agendaItem.index <= 6"
+            v-if="agendaItem.index <= 7"
             :key="agendaItem.index"
             :title="agendaItem.title"
             :speaker="agendaItem.speaker"
@@ -27,7 +27,7 @@
       <div class="column is-half">
         <div v-for="agendaItem in agendaItems" :key="agendaItem.index">
           <agenda-item
-            v-if="agendaItem.index >= 7"
+            v-if="agendaItem.index >= 8"
             :key="agendaItem.index"
             :title="agendaItem.title"
             :speaker="agendaItem.speaker"
@@ -61,7 +61,7 @@ export default {
   computed: {
     hasAgendaItems() {
       return agendaItems.length > 0;
-    }
+    },
   }
 }
 </script>
@@ -70,12 +70,10 @@ export default {
   .title {
     margin-bottom: 50px !important;
     color: white;
-    /* text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5); */
   }
 
   .subtitle {
     color: white;
-    /* text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5); */
   }
 
   .z-index {

@@ -1,9 +1,6 @@
 <template>
   <div class="z-index">
     <h1 class="title">Speakers</h1>
-    <div>
-      <div class="subtitle tba">More to be announced soon!</div>
-    </div>
     <div class="speakers">
       <template>
         <div v-for="speaker in speakers" v-bind:key="speaker">
@@ -207,20 +204,32 @@ export default {
   margin-bottom: 20px;
 }
 
-/* .overflow-scroll-gradient {
+.overflow-scroll-gradient {
     position: relative;
   }
 
+  ::-webkit-scrollbar {
+    width: 18px;
+  }
+
+  ::-webkit-scrollbar-track {
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);  */
+    border-radius: 10px;
+  }
+ 
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #966BF2;
+	background-clip: padding-box;
+	border: 4px solid rgba(0, 0, 0, 0);	
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);  */
+  }
   .overflow-scroll-gradient::after {
     content: '';
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 25px;
-    background: linear-gradient(
-            rgba(255, 255, 255, 0.001),
-            white
-    ); 
     pointer-events: none;
   }
   .overflow-scroll-gradient__scroller {
@@ -228,14 +237,14 @@ export default {
     width: 100%;
     height: 200px;
     line-height: 1.2;
-    scrollbar-width: none;
+    scrollbar-width: thin;
     -ms-overflow-style: none;
   }
 
   .overflow-scroll-gradient__scroller::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-  } */
+    /* width: 0;
+    height: 0; */
+  }
 
 @media (max-width: 1000px) {
   .speakers {
