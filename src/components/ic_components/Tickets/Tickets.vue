@@ -12,6 +12,7 @@
           regular-price="10"
           footer-date="30/04/2022"
           footer-text="Available until"
+          disabled="true"
         />
       </div>
       <div class="column">
@@ -20,9 +21,8 @@
           taltech-student-price="FREE"
           student-price="10"
           regular-price="15"
-          footer-date="31/04/2022"
+          footer-date="01/05/2022"
           footer-text="Available from"
-          disabled="true"
         />
       </div>
     </div>
